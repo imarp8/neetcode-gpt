@@ -10,7 +10,7 @@ class Solution:
 
         return np.round(
             -np.sum(
-                y_true*np.log(y_pred_adjusted) + (1-y_true)*np.log(1-y_pred_adjusted)
+                y_true * np.log(y_pred_adjusted) + (1-y_true) * np.log(1-y_pred_adjusted)
                 )/len(y_true),
             4)
         # y_pred: predicted probabilities
@@ -25,7 +25,7 @@ class Solution:
 
         return np.round(
                 -np.sum(
-                        y_true*np.log(y_pred_adjusted)
+                        y_true * np.log(y_pred_adjusted)
                     )/len(y_true),
                 4)
         # Hint: add a small epsilon (1e-7) to y_pred to avoid log(0)
