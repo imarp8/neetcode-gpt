@@ -21,6 +21,8 @@ class Solution:
                         np.maximum(0,z)
                         ,5
             )
+        else:
+            return np.round(z,5)
         # Pre-activation: z = dot(x, w) + b
         # Sigmoid: σ(z) = 1 / (1 + exp(-z))
         # ReLU: max(0, z)
