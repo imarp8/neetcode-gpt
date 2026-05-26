@@ -33,7 +33,7 @@ class Solution:
 
         dz2 = 2 * (z2 - y_true) / n
         dW2 = dz2.reshape(-1,1) @ a1.reshape(1,-1)
-        db2 = dz2 
+        db2 = dz2.flatten()
 
         da1 = dz2 @ W2
 
